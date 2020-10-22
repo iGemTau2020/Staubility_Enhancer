@@ -1,0 +1,10 @@
+Input / data files :SGA_ExE.txt, SGA_NxN.txt, SGA_ExN_NxE.txt tables.
+Details about the data : The global genetic interaction dataset includes three different genetic interaction maps organized in 3 different tables. In each network a query (gene) and array mutant strains represented in the genetic interaction network along with their corresponding fitness estimates. The networks are different from each other in that each contains a different type of pair of genes that interact together : nonessential x nonessential (NxN) network, essential x nonessential (ExN) network, ExN network and an essential x essential (ExE) network  [3].
+Each table contains 2 columns for the pair of mutant genes that create interaction between them, one more column for genetic interaction score which is the strength of positive or negative interaction between the two genes (see details below), additional column of the fitness value of each gene and also a column of the double mutant fitness of interaction between pairs of genes.
+Each genetic interaction between a pair of genes can be negative and positive. Negative genetic interactions describe double mutants that exhibit a more severe phenotype than expected based on the phenotypes of the corresponding single mutants. Conversely, positive genetic interactions describe double mutants exhibiting a less severe phenotype than expected based on the product of the two single mutant phenotypes [4].
+After combining and sorting the 3 networks there we have collected information about 5707 genes in yeast.
+The code file : Extract_rank_and_fitness.ipynb 
+Output / The results : not_normalized_smf_dmf_ranks_feature.csv, this is a table contains one column of genes name and other column of the following features:
+Features:
+	Rank of gene - number of interactions that each gene creates with other genes.
+	negative rank, Weighted rank positive,  Weighted rank negative, Absolute weighted rank, Smf - the average of the fitness of single mutant per gene and Weighted dmf.
