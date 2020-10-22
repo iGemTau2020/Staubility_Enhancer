@@ -10,6 +10,10 @@ Choose approximately 300 features from our entire set of 1000+ features. The fea
 
 The model, code, and data for this analysis are presented within this directory.
 
-**input**: The first input files is a csv. file containing all the features. It is too big to be uploaded to this respiratory. the other inputs are the flourescence values that serve as "labels" to our model: flourescence_table_NATIVEpr_GFP, flourescence_table_NOP1pr_GFP. 
+**input**: The first input files is a csv. file containing all the features. It is too big to be uploaded to this respiratory. 
+
+The other inputs are the flourescence values that serve as "labels" to our model: flourescence_table_NATIVEpr_GFP, flourescence_table_NOP1pr_GFP. 
+
 **code**: The main code is **PreProcFeatures.m**, that filters the features according to the CFS criteria (function calculate_CFS.m).
+
 **output**: name of the 300 chosen features. 
