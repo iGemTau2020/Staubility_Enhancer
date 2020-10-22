@@ -1,10 +1,11 @@
 
-** Files: **
+**Files:**
 1. The code: "CUB_calculation-FINAL.ipynb" 
 2. Output results: "CUB_results_final.xlsx"
-3. Output normalized results: "CUB_results_normalized.xlsx". The normalization code is ‘Normalization.ipnb’. The method: gaussian normalization, and filling the empty values with the mean value.
 
-** Input data files: **
+Unfortunately, the output file is too big to upload to github. 
+
+**Input data files:**
 
 1. file name: 4932-GPM_2012_09_Saccharomyces_cerevisiae.txt
 
