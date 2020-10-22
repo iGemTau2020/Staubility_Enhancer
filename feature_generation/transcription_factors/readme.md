@@ -1,5 +1,5 @@
 Files: 
-Input / data files:TF_merged_table.csv which was downloaded from YEASTRACT website. The table contains two columns: first column is the gene name, and second column contains
+Input / data files:: four tables which were downloaded from YEASTRACT website. Each table contains two columns: first column is the gene name, and second column contains
 the transcription regulatory sites in each specific target gene in yeast.
 
 The code: TF feature.ipynb
