@@ -9,3 +9,7 @@ Decrease the number of missing values for each instance (gene).
 Choose approximately 300 features from our entire set of 1000+ features. The feature selector we implemented filters features that do not contribute to the prediction, based on a correlation-based measure
 
 The model, code, and data for this analysis are presented within this directory.
+
+**input**: The input file is a csv. file containing all the features. It is too big to be uploaded to this respiratory. 
+**code**: The main code is **PreProcFeatures.m**, that filters the features according to the CFS criteria (function calculate_CFS.m).
+**output**: name of the 300 chosen features. 
