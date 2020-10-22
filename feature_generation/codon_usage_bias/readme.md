@@ -23,3 +23,5 @@ another link (same file, different source): ftp://ftp.ncbi.nlm.nih.gov/geo/serie
 source: https://www.sciencedirect.com/science/article/pii/S0092867410003193, Supplemental Information, Table S1. tRNA Copy Numbers, tRNA Abundance, and tAI of Codons in Various Organisms, Related to Figure 1.
 
 direct link: https://ars.els-cdn.com/content/image/1-s2.0-S0092867410003193-mmc2.xls
+
+The code also uses "orf_coding_all.fasta.gz" in the main directory of the feature generation project. 
