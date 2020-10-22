@@ -8,6 +8,5 @@ Features:
 	Rank of gene- number of interactions that each gene creates with other genes. 
 The rank of the gene is an important feature because genes that create a larger number of interactions are probably evolutionarily older, and also more conserved because if they 
 are related to more genes, then most likely they tend to develop fewer mutations.
-	Anoter feature is Weighted rank_i which takes into account not only the number of interactions in which each gene is involved, but also the weight of each one of its edges
-  and creates a kind of average measure of the strength of interaction in which the gene is involved.
+	Another feature is Weighted rank_i which takes into account not only the number of interactions in which each gene is involved, but also the weight of each one of its edges and creates a kind of average measure of the strength of interaction in which the gene is involved.
  
