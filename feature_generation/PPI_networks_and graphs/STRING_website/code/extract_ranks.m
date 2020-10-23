@@ -1,6 +1,6 @@
 % searching ranks of proteins with updated graph
 
-f = fopen('4932.protein.links.v11.0.txt');
+f = fopen('../inputs/4932.protein.links.v11.0.txt');
 PPI = textscan(f,'%s %s %f','HeaderLines',1); %EndNodes_1, EndNodes_2, Weight
 fclose(f);
 
@@ -35,4 +35,4 @@ tbl = cell2table(ORF_proteins);
 tbl2 = array2table(ranks);
 tbl3 = array2table(weighted_rank);
 tbl_csv = [tbl,tbl2,tbl3];
-writetable(tbl_csv,'rank_data_updated.csv'); 
+writetable(tbl_csv,'../outputs/rank_data_updated.csv'); 
