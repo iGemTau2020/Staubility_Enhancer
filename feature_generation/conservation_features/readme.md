@@ -2,15 +2,18 @@ Extraction of features related to conservation of amino acid sequences in orthol
 We thank Michael Peeri, Ph.D. student in Laboratory of Computational Systems and Synthetic Biology headed by Prof. Tamir Tuller, for preparing the input files.
 Since the data is not belong to us we will only describe it and will not upload the input files.
 Input / data files:
-1.	Clw files - This kind of file contains the MSAs of genes in S. cerevisiae and their orthologous genes from up to 5 Orthologous Groups (OGs)  
+1. Clw files - This kind of file contains the MSAs of genes in S. cerevisiae and their orthologous genes from up to 5 Orthologous Groups (OGs)  
 (Saccharomycetaceae, Saccharomycetes, Ascomycota, Fungi, Eukaryota) in ClustalW format. OGs for S. cerevisiae genes were obtained from OrthoDB [1].
 Amino-acid MSA for each OG was performed using Muscle with the option - maxiters 4.
 The coding sequences for each genome were obtained from Ensembl FTP. For each amino acid position in each S. cerevisiae protein, we examined the MSAs for all OGs which
 include it and analyzed the codons in that position.
 
-2.  5310 csv files based on the MSA files (see data files of the first part of the conservation project).Each file contains the frequency of each of the amino acids 
+2.  5310 csv files based on the MSA files (see data files of the first part of the conservation project).Each file contains the frequency of each of the amino acids
 that make up the gene and the frequency of each of the nucleotides in the codon. In addition, the maximal value found in any of the OGs in a specific position was recorded
 for each amino acid and for each nucleotide position in the codon.
+
+3. Pickle file - One file in the input directory is pickle file - python format for saving obejcts. We used the pickle file in order to store mapping from OrthoDB ids to Ensemble ids.
+ Please note that the pickle file here is sampled since it's size and can be used only as an example of the data in it.
 
 Featues based on the Clw files:
 The first kind of feature was a calculation of the mean and median of the percentage of indels (gaps) in each position (column) within a multiple sequence alignment.

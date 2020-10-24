@@ -1,4 +1,5 @@
-Input / data files :SGA_ExE.txt, SGA_NxN.txt, SGA_ExN_NxE.txt tables.
+Input / data files :SGA_ExE.txt, SGA_NxN.txt, SGA_ExN_NxE.txt tables.  
+Please note that all the files here are sampled since their size and can be used only as an example of the data in it.
 Each table contains 2 columns for the pair of mutant genes that create interaction between them, one more column for genetic interaction score which is the strength of 
 or negative interaction between the two genes (see details below), additional column of the fitness value of each gene and also a column of the double mutant fitness of interaction between pairs of genes.
 
