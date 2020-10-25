@@ -24,7 +24,7 @@ Please note that the pickle file here is sampled since it's size and can be used
 ## Output files
 1. entropy features gene names converted.csv. This table contains 417 columns: the first column is the gene name, while the other 416 columns are the extracted features-see details below. In the output file there are 4691 genes of S. cerevisiae.
 
-2.conservation features gene names converted.csv, this table contains 25 columns: the first column contains the gene name, while the other 24 columns are the extracted features-  see details below. In the output file there are 5310 genes of S. cerevisiae.
+2. conservation features gene names converted.csv, this table contains 25 columns: the first column contains the gene name, while the other 24 columns are the extracted features-  see details below. In the output file there are 5310 genes of S. cerevisiae.
 
 ## Features
 ### Featues based on the Clw files
