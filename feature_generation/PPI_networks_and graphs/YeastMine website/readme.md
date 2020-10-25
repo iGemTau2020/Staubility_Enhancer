@@ -1,5 +1,5 @@
 
-Files (Input+Output):  The data was downloaded from YeastMine website> Lists> ALL_Verified_Uncharacterized_Dubious_ORFs->Interactions
+Files (Input+Output):  The data was downloaded from YeastMine website> Lists> ALL_Verified_Uncharacterized_Dubious_ORFs->Interactions. Here it is uploaded under the name 'yeastmine.xlsx'.
 It contains 5000 rows that depict how many interactions each yeast's protein is involved in. 
 The data contains 3 columns – 
 •	BioEntity.secondaryIdentifier gives information about the protein's name.
