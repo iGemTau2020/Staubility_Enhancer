@@ -1,9 +1,9 @@
 extraction of features related to different types of interactions between genes from STRING website.
 
 # Table of Contents
-1. [Input](#Input files)
-2. [Code](#Code file)
-3. [Output](#Output file)
+1. [Input](#input_files)
+2. [Code](#code_file)
+3. [Output](#output_file)
 4. [Features](#Features)
 
 ## Input files
