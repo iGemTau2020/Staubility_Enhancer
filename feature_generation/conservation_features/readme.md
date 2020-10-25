@@ -1,6 +1,6 @@
 # Table of Contents
 1. [Input](#input-files)
-2. [Output](#output-file)
+2. [Output](#output-files)
 3. [Features](#Features)
 
 Extraction of features related to conservation of amino acid sequences in orthologous genes.
