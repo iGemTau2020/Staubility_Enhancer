@@ -54,5 +54,7 @@ These features were calculated for both absolute and relative scores.
 files needed - full_table.csv, ATG_Tamir.xlsx
 output - ATG_withnan1.csv, ATG_withnan.csv
 
+In addition we used 'Gravy_aliphatic' and 'fop_instability' tables which contains this features for each yeast's gene (attached as inputs).
+
 
 mail info: glicksteinbar@gmail.com
