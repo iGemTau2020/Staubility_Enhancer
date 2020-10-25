@@ -43,65 +43,65 @@ Systematic_B_uni=unique(Systematic_B,'stable');
 all_proteins=[Systematic_A_uni;Systematic_B_uni];
 all_proteins_unique=unique(all_proteins,'stable');
 
-% %initalzing all the peatures we would like to calculate
-% rank=zeros(1,length(all_proteins_unique));
-% num_of_genetic_interactions=zeros(1,length(all_proteins_unique));
-% num_of_physical_interactions=zeros(1,length(all_proteins_unique));
-% exp_names=unique(Experimental_Name,'stable');
-% type_of_interactions=zeros(length(all_proteins_unique),length(exp_names));
-% num_of_high=zeros(1,length(all_proteins_unique));
-% num_of_low=zeros(1,length(all_proteins_unique));
-% num_of_both=zeros(1,length(all_proteins_unique));
-% %calculating the features
-% for i=1:length(all_proteins_unique)
-%        rank(i)=sum(strcmp(all_proteins_unique{i}, Systematic_A))+sum(strcmp(all_proteins_unique{i}, Systematic_B));
-%        index_inA=find(strcmp(all_proteins_unique{i}, Systematic_A));
-%        index_inB=find(strcmp(all_proteins_unique{i}, Systematic_B));
-%        for j=1:length(index_inA)
-%            if strcmp(Experimental_Type{index_inA(j)},"genetic")
-%                num_of_genetic_interactions(i)=num_of_genetic_interactions(i)+1;
-%            else
-%                num_of_physical_interactions(i)=num_of_physical_interactions(i)+1;
-%  
-%            end 
-%        end 
-%        for j=1:length(index_inB)
-%            if strcmp(Experimental_Type{index_inB(j)},"genetic")
-%                num_of_genetic_interactions(i)=num_of_genetic_interactions(i)+1;
-%            else
-%                num_of_physical_interactions(i)=num_of_physical_interactions(i)+1;
-%  
-%            end
-%        end
-%        for j=1:length(index_inA)
-%           interaction_type=find(strcmp(Experimental_Name{index_inA(j)},exp_names));
-%           type_of_interactions(i,interaction_type)= type_of_interactions(i,interaction_type)+1;
-%        end
-%        for j=1:length(index_inB)
-%           interaction_type=find(strcmp(Experimental_Name{index_inB(j)},exp_names));
-%           type_of_interactions(i,interaction_type)= type_of_interactions(i,interaction_type)+1;
-%        end 
-%        for j=1:length(index_inA)
-%            if strcmp(Interaction_Throughput{index_inA(j)},"High Throughput")
-%                num_of_high(i)=num_of_high(i)+1;
-%            elseif strcmp(Interaction_Throughput{index_inA(j)},"Low Throughput")
-%                num_of_low(i)=num_of_low(i)+1;
-%            else
-%                num_of_both(i)=num_of_both(i)+1;
-%  
-%            end 
-%        end 
-%        for j=1:length(index_inB)
-%            if strcmp(Interaction_Throughput{index_inB(j)},"High Throughput")
-%                num_of_high(i)=num_of_high(i)+1;
-%            elseif strcmp(Interaction_Throughput{index_inB(j)},"Low Throughput")
-%                num_of_low(i)=num_of_low(i)+1;
-%            else
-%                num_of_both(i)=num_of_both(i)+1;
-%  
-%            end 
-%        end 
-% end
-% 
-% 
-% 
+%initalzing all the peatures we would like to calculate
+rank=zeros(1,length(all_proteins_unique));
+num_of_genetic_interactions=zeros(1,length(all_proteins_unique));
+num_of_physical_interactions=zeros(1,length(all_proteins_unique));
+exp_names=unique(Experimental_Name,'stable');
+type_of_interactions=zeros(length(all_proteins_unique),length(exp_names));
+num_of_high=zeros(1,length(all_proteins_unique));
+num_of_low=zeros(1,length(all_proteins_unique));
+num_of_both=zeros(1,length(all_proteins_unique));
+%calculating the features
+for i=1:length(all_proteins_unique)
+       rank(i)=sum(strcmp(all_proteins_unique{i}, Systematic_A))+sum(strcmp(all_proteins_unique{i}, Systematic_B));
+       index_inA=find(strcmp(all_proteins_unique{i}, Systematic_A));
+       index_inB=find(strcmp(all_proteins_unique{i}, Systematic_B));
+       for j=1:length(index_inA)
+           if strcmp(Experimental_Type{index_inA(j)},"genetic")
+               num_of_genetic_interactions(i)=num_of_genetic_interactions(i)+1;
+           else
+               num_of_physical_interactions(i)=num_of_physical_interactions(i)+1;
+ 
+           end 
+       end 
+       for j=1:length(index_inB)
+           if strcmp(Experimental_Type{index_inB(j)},"genetic")
+               num_of_genetic_interactions(i)=num_of_genetic_interactions(i)+1;
+           else
+               num_of_physical_interactions(i)=num_of_physical_interactions(i)+1;
+ 
+           end
+       end
+       for j=1:length(index_inA)
+          interaction_type=find(strcmp(Experimental_Name{index_inA(j)},exp_names));
+          type_of_interactions(i,interaction_type)= type_of_interactions(i,interaction_type)+1;
+       end
+       for j=1:length(index_inB)
+          interaction_type=find(strcmp(Experimental_Name{index_inB(j)},exp_names));
+          type_of_interactions(i,interaction_type)= type_of_interactions(i,interaction_type)+1;
+       end 
+       for j=1:length(index_inA)
+           if strcmp(Interaction_Throughput{index_inA(j)},"High Throughput")
+               num_of_high(i)=num_of_high(i)+1;
+           elseif strcmp(Interaction_Throughput{index_inA(j)},"Low Throughput")
+               num_of_low(i)=num_of_low(i)+1;
+           else
+               num_of_both(i)=num_of_both(i)+1;
+ 
+           end 
+       end 
+       for j=1:length(index_inB)
+           if strcmp(Interaction_Throughput{index_inB(j)},"High Throughput")
+               num_of_high(i)=num_of_high(i)+1;
+           elseif strcmp(Interaction_Throughput{index_inB(j)},"Low Throughput")
+               num_of_low(i)=num_of_low(i)+1;
+           else
+               num_of_both(i)=num_of_both(i)+1;
+ 
+           end 
+       end 
+end
+
+
+
