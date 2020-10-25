@@ -58,70 +58,70 @@ for k =1:numfiles
         fclose(fileid);
 end
 
-% %first 30 windows, each window with length 50
-% disorder_percentage1_first30=zeros(5839,30);
-% disorder_std1_first30=zeros(5839,30);
-% disorder_percentage2_first30=zeros(5839,30);
-% disorder_std2_first30=zeros(5839,30);
-% disorder30_percentage_first30=zeros(5839,30);
-% disorder30_std_first30=zeros(5839,30);
-% disorder_anchor_percentage_first30=zeros(5839,30);
-% disorder_anchor_std_first30=zeros(5839,30);
-% max_disorder_percentage_first30=zeros(5839,30);
-% 
-% for k=1:numfiles
-%     if length(mydata{k}{1})<79
-%         max_i=length(mydata{k}{1})-50;
-%         disorder_percentage1_first30(k,max_i+1:30)=NaN;
-%         disorder_std1_first30(k,max_i+1:30)=NaN;
-%         disorder_percentage2_first30(k,max_i+1:30)=NaN;
-%         disorder_std2_first30(k,max_i+1:30)=NaN;
-%         disorder30_percentage_first30(k,max_i+1:30)=NaN;
-%         disorder30_std_first30(k,max_i+1:30)=NaN;
-%         disorder_anchor_percentage_first30(k,max_i+1:30)=NaN;
-%         disorder_anchor_std_first30(k,max_i+1:30)=NaN;
-%         max_disorder_percentage_first30(k,max_i+1:30)=NaN;
-%     else
-%         max_i=30;
-%     end
-%     for i=1:max_i
-%         disorder_percentage1_first30(k,i)=sum(mydata{k}{7}(i:i+49)==3)+sum(mydata{k}{7}(i:i+49)==4);
-%         disorder_std1_first30(k,i)=std([mydata{k}{7}(i:i+49)==3]+[mydata{k}{7}(i:i+49)==4]);
-%         disorder_percentage2_first30(k,i)=sum(string(mydata{k}{8}(i:i+49))=="DISORDERED");
-%         disorder_std2_first30(k,i)=std(string(mydata{k}{8}(i:i+49))=="DISORDERED");
-%         disorder30_percentage_first30(k,i)=sum(string(mydata{k}{9}(i:i+49))=="DIS_30");
-%         disorder30_std_first30(k,i)=std(string(mydata{k}{9}(i:i+49))=="DIS_30");
-%         disorder_anchor_percentage_first30(k,i)=sum(mydata{k}{13}(i:i+49));
-%         disorder_anchor_std_first30(k,i)=std(mydata{k}{13}(i:i+49));
-%         max_disorder_percentage_first30(k,i)=max([max(mydata{1,k}{1,3}(i:i+49)) max(mydata{1,k}{1,4}(i:i+49)) max(mydata{1,k}{1,6}(i:i+49)) max(mydata{1,k}{1,12}(i:i+49))]);   
-%     end
-%       disorder_percentage1_first30(k,1:30)=disorder_percentage1_first30(k,1:30)/50;
-%       disorder_percentage2_first30(k,1:30)=disorder_percentage2_first30(k,1:30)/50;
-%       disorder30_percentage_first30(k,1:30)=disorder30_percentage_first30(k,1:30)/50;
-%       disorder_anchor_percentage_first30(k,1:30)=disorder_anchor_percentage_first30(k,1:30)/50;
-% end
-% 
-% disorder_percentage1_lastwindow=zeros(5839,1);
-% disorder_std1_lastwindow=zeros(5839,1);
-% disorder_percentage2_lastwindow=zeros(5839,1);
-% disorder_std2_lastwindow=zeros(5839,1);
-% disorder30_percentage_lastwindow=zeros(5839,1);
-% disorder30_std_lastwindow=zeros(5839,1);
-% disorder_anchor_percentage_lastwindow=zeros(5839,1);
-% disorder_anchor_std_lastwindow=zeros(5839,1);
-% max_disorder_percentage_lastwindow=zeros(5839,1);
-% 
-% for k=1:numfiles
-%     length_of_file=length(mydata{k}{1});
-%     disorder_percentage1_lastwindow(k)=(sum(mydata{k}{7}(length_of_file-49:length_of_file)==3)+sum(mydata{k}{7}(length_of_file-49:length_of_file)==4))/50;
-%     disorder_percentage1_lastwindow(k)=std([mydata{k}{7}(length_of_file-49:length_of_file)==3]+[mydata{k}{7}(length_of_file-49:length_of_file)==4]);
-%     disorder_percentage2_lastwindow(k)=(sum(string(mydata{k}{8}(length_of_file-49:length_of_file))=="DISORDERED"))/50;
-%     disorder_std2_lastwindow(k)=std(string(mydata{k}{8}(length_of_file-49:length_of_file))=="DISORDERED");
-%     disorder30_percentage_lastwindow(k)=(sum(string(mydata{k}{9}(length_of_file-49:length_of_file))=="DIS_30"))/50;
-%     disorder30_std_lastwindow(k)=std(string(mydata{k}{9}(length_of_file-49:length_of_file))=="DIS_30");
-%     disorder_anchor_percentage_lastwindow(k)=(sum(mydata{k}{13}(length_of_file-49:length_of_file)))/50;
-%     disorder_anchor_std_lastwindow(k)=std(mydata{k}{13}(length_of_file-49:length_of_file));
-%     max_disorder_percentage_lastwindow(k)=max([max(mydata{1,k}{1,3}(length_of_file-49:length_of_file)),max(mydata{1,k}{1,4}(length_of_file-49:length_of_file)),max(mydata{1,k}{1,6}(length_of_file-49:length_of_file)),max(mydata{1,k}{1,12}(length_of_file-49:length_of_file))]);   
-% end
+%first 30 windows, each window with length 50
+disorder_percentage1_first30=zeros(5839,30);
+disorder_std1_first30=zeros(5839,30);
+disorder_percentage2_first30=zeros(5839,30);
+disorder_std2_first30=zeros(5839,30);
+disorder30_percentage_first30=zeros(5839,30);
+disorder30_std_first30=zeros(5839,30);
+disorder_anchor_percentage_first30=zeros(5839,30);
+disorder_anchor_std_first30=zeros(5839,30);
+max_disorder_percentage_first30=zeros(5839,30);
+
+for k=1:numfiles
+    if length(mydata{k}{1})<79
+        max_i=length(mydata{k}{1})-50;
+        disorder_percentage1_first30(k,max_i+1:30)=NaN;
+        disorder_std1_first30(k,max_i+1:30)=NaN;
+        disorder_percentage2_first30(k,max_i+1:30)=NaN;
+        disorder_std2_first30(k,max_i+1:30)=NaN;
+        disorder30_percentage_first30(k,max_i+1:30)=NaN;
+        disorder30_std_first30(k,max_i+1:30)=NaN;
+        disorder_anchor_percentage_first30(k,max_i+1:30)=NaN;
+        disorder_anchor_std_first30(k,max_i+1:30)=NaN;
+        max_disorder_percentage_first30(k,max_i+1:30)=NaN;
+    else
+        max_i=30;
+    end
+    for i=1:max_i
+        disorder_percentage1_first30(k,i)=sum(mydata{k}{7}(i:i+49)==3)+sum(mydata{k}{7}(i:i+49)==4);
+        disorder_std1_first30(k,i)=std([mydata{k}{7}(i:i+49)==3]+[mydata{k}{7}(i:i+49)==4]);
+        disorder_percentage2_first30(k,i)=sum(string(mydata{k}{8}(i:i+49))=="DISORDERED");
+        disorder_std2_first30(k,i)=std(string(mydata{k}{8}(i:i+49))=="DISORDERED");
+        disorder30_percentage_first30(k,i)=sum(string(mydata{k}{9}(i:i+49))=="DIS_30");
+        disorder30_std_first30(k,i)=std(string(mydata{k}{9}(i:i+49))=="DIS_30");
+        disorder_anchor_percentage_first30(k,i)=sum(mydata{k}{13}(i:i+49));
+        disorder_anchor_std_first30(k,i)=std(mydata{k}{13}(i:i+49));
+        max_disorder_percentage_first30(k,i)=max([max(mydata{1,k}{1,3}(i:i+49)) max(mydata{1,k}{1,4}(i:i+49)) max(mydata{1,k}{1,6}(i:i+49)) max(mydata{1,k}{1,12}(i:i+49))]);   
+    end
+      disorder_percentage1_first30(k,1:30)=disorder_percentage1_first30(k,1:30)/50;
+      disorder_percentage2_first30(k,1:30)=disorder_percentage2_first30(k,1:30)/50;
+      disorder30_percentage_first30(k,1:30)=disorder30_percentage_first30(k,1:30)/50;
+      disorder_anchor_percentage_first30(k,1:30)=disorder_anchor_percentage_first30(k,1:30)/50;
+end
+
+disorder_percentage1_lastwindow=zeros(5839,1);
+disorder_std1_lastwindow=zeros(5839,1);
+disorder_percentage2_lastwindow=zeros(5839,1);
+disorder_std2_lastwindow=zeros(5839,1);
+disorder30_percentage_lastwindow=zeros(5839,1);
+disorder30_std_lastwindow=zeros(5839,1);
+disorder_anchor_percentage_lastwindow=zeros(5839,1);
+disorder_anchor_std_lastwindow=zeros(5839,1);
+max_disorder_percentage_lastwindow=zeros(5839,1);
+
+for k=1:numfiles
+    length_of_file=length(mydata{k}{1});
+    disorder_percentage1_lastwindow(k)=(sum(mydata{k}{7}(length_of_file-49:length_of_file)==3)+sum(mydata{k}{7}(length_of_file-49:length_of_file)==4))/50;
+    disorder_percentage1_lastwindow(k)=std([mydata{k}{7}(length_of_file-49:length_of_file)==3]+[mydata{k}{7}(length_of_file-49:length_of_file)==4]);
+    disorder_percentage2_lastwindow(k)=(sum(string(mydata{k}{8}(length_of_file-49:length_of_file))=="DISORDERED"))/50;
+    disorder_std2_lastwindow(k)=std(string(mydata{k}{8}(length_of_file-49:length_of_file))=="DISORDERED");
+    disorder30_percentage_lastwindow(k)=(sum(string(mydata{k}{9}(length_of_file-49:length_of_file))=="DIS_30"))/50;
+    disorder30_std_lastwindow(k)=std(string(mydata{k}{9}(length_of_file-49:length_of_file))=="DIS_30");
+    disorder_anchor_percentage_lastwindow(k)=(sum(mydata{k}{13}(length_of_file-49:length_of_file)))/50;
+    disorder_anchor_std_lastwindow(k)=std(mydata{k}{13}(length_of_file-49:length_of_file));
+    max_disorder_percentage_lastwindow(k)=max([max(mydata{1,k}{1,3}(length_of_file-49:length_of_file)),max(mydata{1,k}{1,4}(length_of_file-49:length_of_file)),max(mydata{1,k}{1,6}(length_of_file-49:length_of_file)),max(mydata{1,k}{1,12}(length_of_file-49:length_of_file))]);   
+end
 
         
