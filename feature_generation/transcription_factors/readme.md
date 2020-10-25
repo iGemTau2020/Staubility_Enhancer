@@ -1,9 +1,9 @@
 # Table of Contents
-1. [Input](#input_files)
-2. [Code](#code_file)
-3. [Output](#output_file)
+1. [Input](#input-file)
+2. [Code](#code-file)
+3. [Output](#output-file)
 
-## Input files
+## Input file
 four tables which were downloaded from YEASTRACT website. Each table contains two columns: first column is the gene name, and second column contains
 the transcription regulatory sites in each specific target gene in yeast.
 
