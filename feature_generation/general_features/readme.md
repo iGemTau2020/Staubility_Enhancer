@@ -54,9 +54,5 @@ These features were calculated for both absolute and relative scores.
 files needed - full_table.csv, ATG_Tamir.xlsx
 output - ATG_withnan1.csv, ATG_withnan.csv
 
-max_5_ind
-We used the string PPI in order to create for each gene a vector containing its 5 strongest connections (5 highest scores from the string PPI).
-files needed - 4932.protein.links.v11.0.txt (too big, contact us and we will sent it to you), seq_orf.csv
-output - max_5_ind.csv
 
 mail info: glicksteinbar@gmail.com
