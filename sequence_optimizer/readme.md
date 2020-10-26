@@ -25,3 +25,5 @@ This code optimizes the sequence of a given construct, composed of target gene, 
 * dnachisel (pip install)
 * biopython (pip install)
 * sequenticon (pip install)
+
+**Note** at the end of the script, there is an example of input data for testing
