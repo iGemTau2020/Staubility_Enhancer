@@ -14,6 +14,6 @@ The model, code, and data for this analysis are presented within this directory.
 
 The other inputs are the fluorescence values that serve as "labels" for our model: flourescence_table_NATIVEpr_GFP, flourescence_table_NOP1pr_GFP. 
 
-**code**: The main code is **PreProcFeatures.m**, that filters the features according to the CFS criteria (function calculate_CFS.m).
+**code**: The main code is **PreProcFeatures.m**, that filters the features according to the CFS criteria (using the function called calculate_CFS.m).
 
 **output**: name of the 300 chosen features. 
