@@ -1,19 +1,19 @@
  Prediction
  -----------
- This function is the prediction function. The function gets a table of genes and features and predict the best 10 genes that are most likely genes to get the higher fluorescent   protein expression based on RandomForest algorithm, with saved weights file.
+ This script is the conjugated gene prediction function. This function gets a table of genes and features, and predicts the ten best candidate genes most likely to get higher fluorescent protein expression. This is predicted using a RandomForest algorithm, with saved weights file.
 
 
  Input
  ----------
  - input_features - numpy array
-       normilzed array with shape of NxM (N -number of genes, M number of featurs (201)
+       normalized array with shape of MxN (M -number of genes, N number of features)
 
  Output
  -------
  - top_names - list of strings
                list of the 10 best genes names
  - top_vals - list of strings of floats
-               list of the 10 best genes normlized scores
+               list of the 10 best genes normalized scores
 
  Requirements
  -------
