@@ -1,6 +1,6 @@
 Input and Outputs of all functions 
 
-Hic
+Hic:
 The function calculates for each gene:
 1.	Rank - number of connections
 2.	Mean value of distances
@@ -10,17 +10,17 @@ The function calculates for each gene:
 files needed - HiC.mat (too big, contact us and we will sent it to you), updated_new_features_table.csv (too big, contact us and we will sent it to you)
 output - HiC.csv
 
-CoExp
+CoExp:
 the function calculates the weighted rank for each gene according to CoExp matrix.
 files needed - CoExp.mat (too big, contact us and we will sent it to you)
 output - Weighted_Rank.csv
 
-lfe
+lfe:
 The features are based on the following tables, in addition we calculated the mean value per gene for each table.
 files needed - export_taxid_559292_begin_dlfe.csv, export_taxid_559292_begin_native.csv, export_taxid_559292_begin_shuffled.csv
 output - dlfe.csv, lfe_native.csv, lfe_shuffled.csv, mean_lfe.csv
 
-sORF
+sORF:
 sORFs are shifted Open Reading Frames beginning at alternative ATGs downstream in the ORF from the main START codon and terminating with a stop codon.
 The features we calculated using the gene's sequence:
 1.	Number of shifted ORFs
@@ -35,7 +35,7 @@ The features we calculated using the gene's sequence:
 files needed - full_table.csv (contains the sequence of each gene
 output - sORF.csv, sORF_Normalized.csv
 
-ATG_features
+ATG_features:
 We used the table 'ATG_Tamir' which contains ATG context score for 5861 genes.
 The score was calculated for the main ATG, for each alternative ATG in the 150 nucleotides of the untranslated region on the 5’ side (5UTR) and for each alternative ATG in the 150 nucleotides of the open reading frame (ORF).
 For each alternative ATG, an absolute score and a relative score (absolute score divided by the main ATG score) were both calculated.
