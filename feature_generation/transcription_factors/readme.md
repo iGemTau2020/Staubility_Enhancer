@@ -2,6 +2,7 @@
 1. [Input](#input-file)
 2. [Code](#code-file)
 3. [Output](#output-file)
+4ץ [Feature](#Feature)
 
 ## Input file
 four datasets which were downloaded from YEASTRACT website. Each dataset contains two columns: the first column is the gene name, and the second column contains
@@ -12,3 +13,6 @@ TF feature.ipynb
 
 ## Output file
 number_of_TF.csv, this is a dataset containing two columns: the first column is gene name, and the second column is the feature: number of transcription regulatory sites in each target gene in yeast.
+
+## Feature
+umber of transcription regulatory sites in each target gene in yeast. This feature is important because the transcription factors regulate the expression levels of the genes, and thus can help us to predict the intensity of fluorescence that we are interested in.
