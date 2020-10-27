@@ -1,4 +1,4 @@
-These functions generete general features which relate to yeasts genes.
+These functions generete general features which relate to the characteristics of yeasts genes.
 Bellow you can find information on the features and the input and outputs of all functions.
 
 Hic:
