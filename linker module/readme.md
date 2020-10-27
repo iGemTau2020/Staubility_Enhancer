@@ -19,6 +19,7 @@ This code enables the user to choose his preferred linker type- 2A/fusion and it
 
 •	The conventional way to rank the 2A peptides is from the most efficient P2A, followed by T2A, E2A and F2A.
 
+
 Fusion linkers:
 
 •	Essential gene's score- a Euclidian distance between the essential gene disorder profile before and after fusion.
