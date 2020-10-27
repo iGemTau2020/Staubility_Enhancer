@@ -15,14 +15,14 @@ The file contains the following features:
 
 2.	Mean_score:mean on all the numerical columns in the original file on all the positions.
 
-3.	 Disorder_percentage1: for every gene this score is calculated using all the gene's positions by consensus approach #1 (Explained on our wiki). We counted the number of disorder sites in the gene (3/4 in column 7 in the original file) and divided by the number of positions.
+3.	 Disorder_percentage1: for each gene, this score is calculated using all the gene's positions by consensus approach #1 (Explained on our wiki). We counted the number of disorder sites in the gene (3/4 in column 7 in the original file) and divided by the number of positions.
 
-4.	Disorder_percentage2: for every gene this score is calculated using all the gene's positions by consensus approach #2 (Explained on our wiki). We counted the number of disorder sites in the gene ("DISORDERED" in column 8 in the original file) and divided by the number of positions.
+4.	Disorder_percentage2: for each gene, this score is calculated using all the gene's positions by consensus approach #2 (Explained on our wiki). We counted the number of disorder sites in the gene ("DISORDERED" in column 8 in the original file) and divided by the number of positions.
 
-5.	Disorder_percentage_both_algorithms: for every gene this score is calculated using all the gene's positions. We counted the number of disorder sites in the gene when both 
+5.	Disorder_percentage_both_algorithms: for each gene, this score is calculated using all the gene's positions. We counted the number of disorder sites in the gene when both 
 consensus approaches determined the site as disordered ("DISORDERED" in column 8 and 3/4 value in column 7 in the original file) and divided by the number of positions.
 
-6.	Anchor_disorder_percentage: for every gene this score is calculated using all the gene's positions. We counted the number of disorder sites in the gene (1 in column 13 in the original file) and divided by the number of positions.
+6.	Anchor_disorder_percentage: for each gene, this score is calculated using all the gene's positions. We counted the number of disorder sites in the gene (1 in column 13 in the original file) and divided by the number of positions.
 
 7.	Anchor_percentage: we used mean function on all the gene's positions in column 12 in the original file (Anchor score, explained on our wiki).
 
@@ -30,11 +30,11 @@ consensus approaches determined the site as disordered ("DISORDERED" in column 8
 
 9.	VSL2B_percentage- we used mean function on all the gene's positions in column 4 in the original file (VSL2B score, explained on our wiki).
 
-10.	DisEMBL_percentage: for every gene this score is calculated using all the gene's positions. We counted the number of disorder sites in the gene ("DISORDERED" in column 5 in the original file,DisEMBL, , explained on our wiki) and divided by the number of positions.
+10.	DisEMBL_percentage: for each gene, this score is calculated using all the gene's positions. We counted the number of disorder sites in the gene ("DISORDERED" in column 5 in the original file,DisEMBL, , explained on our wiki) and divided by the number of positions.
 
 11.	MoreRONN_percentage: we used mean function on all the gene's positions in column 6 in the original file (MoreRONN score, explained on our wiki).
 
-12.	Disorder30_percentage: for every gene this score is calculated using all the gene's positions. We counted the number of disorder30 sites in the gene ("DIS_30" in column 9 in the original file, explained on our wiki) and divided by the number of positions.
+12.	Disorder30_percentage: for each gene, this score is calculated using all the gene's positions. We counted the number of disorder30 sites in the gene ("DIS_30" in column 9 in the original file, explained on our wiki) and divided by the number of positions.
 
 13.	Disorder_percentage1_window1-Disorder_percentage1_window30: each window contains 50 gene's positions and the starting point for each window is the number of the window. For example, window 17 is from position 17 until position 66. In each window we counted the number for disorders according to consensus #1 and divided by 50. If the gene's length is smaller than 79 than some windows aren't full and therefore these window's value will be NaN.
 
