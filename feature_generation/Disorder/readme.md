@@ -2,7 +2,8 @@ This code uses disorder prediction results for all yeast's genes and creates rel
 
 **Input:**
 
-•	Q0045_COX1_SGDID_S000007260.merged. This is one example file out of 5500 files used. We uploaded one file for example due to copyrights .Each file is prediction result of one gene. In each file there is per-residue prediction results from disorder prediction algorithms and ANCHOR disordered binding sites
+•	Q0045_COX1_SGDID_S000007260.merged. This is one example file out of 5500 files used. We uploaded one file for example due to copyrights.
+Each file is prediction result of one gene. In each file there is per-residue prediction results from disorder prediction algorithms and ANCHOR disordered binding sites
 
 **Code:** The data has been proceeded with MATLAB 'disorder.m' script.
 
@@ -55,5 +56,5 @@ consensus approaches determined the site as disordered ("DISORDERED" in column 8
 
 22.	Disorder_percentage1_lastwindow, Disorder_std1_lastwindow, Disorder_percentage2_lastwindow, Disorder_std2_lastwindow,  Disorder30_percentage_lastwindow,Disorder30_std_lastwindow, Disorder_anchor_percentage_lastwindow, Disorder_anchor_std_lastwindow, Max_disorder_percentage_lastwindow-  the following were calculate the same way described in 13-21 but the window was different. Here the features were calculated only to the last window- 50 positions from the end and backward and therefore there aren't NaN values.
 
-***NOTE:If the sequence is smaller than 129 the last window share's some of its positions with the first 30 windows.**
+**NOTE:If the sequence is smaller than 129 the last window share's some of its positions with the first 30 windows.**
 
