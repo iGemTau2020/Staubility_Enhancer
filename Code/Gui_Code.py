@@ -315,22 +315,23 @@ class InitApp(QWidget):
                 QMessageBox.about(self, "User Warning",
                                  ret)
                 return
-            if string[:4]=="NONE":
+            if string[:4] == "NONE":
                 string = string[4:]
             if string[-3:] == "TAG" or string[-3:] == "TAA" or string[-3:] == "TGA":
                 string = string[:-3]
                 if len(string)<3:
-                    ret+="Your sequence contains only stop codon\n"
+                    ret += "Your sequence contains only a stop codon\n"
             if len(string)%3!=0:
-                ret+= "String must be divided by 3!\n"
+                ret += "String must be divided by 3!\n"
             for char in string:
                 if char not in allowd_chars:
                     if char==" ":
                         char = "'space'"
                     ret += "Character not allowed {} !\n".format(char)
-            target_gene_aa = gene_seq_2_aa(string)
-            if not (all(i in valid_aa for i in target_gene_aa)):
-                ret += "There is a stop codon in the middle of your target gene.\nPlease check that the sequence you inserted is a valid reading frame\n"
+            if ret == "":
+                target_gene_aa = gene_seq_2_aa(string)
+                if not (all(i in valid_aa for i in target_gene_aa)):
+                    ret += "There is a stop codon in the middle of your target gene.\nPlease check that the sequence you inserted is a valid reading frame\n"
             if ret != "":
                 ret = "Wrong Input! Please fix the next errors and try again:\n\n"+ret
                 QMessageBox.about(self, "User Warning",
