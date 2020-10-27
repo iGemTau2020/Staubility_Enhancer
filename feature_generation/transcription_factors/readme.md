@@ -12,7 +12,7 @@ the transcription regulatory sites for each specific target gene in yeast.
 TF feature.ipynb
 
 ## Output file
-number_of_TF.csv, this is a dataset containing two columns: the first column is gene name, and the second column is the feature: number of transcription regulatory sites in each target gene in yeast.
+number_of_TF.csv, this is a dataset containing two columns: the first column is the gene name of each gene in yeast, and the second column is that gene's number of transcription regulatory sites.
 
 ## Feature
-umber of transcription regulatory sites in each target gene in yeast. This feature is important because the transcription factors regulate the expression levels of the genes, and thus can help us to predict the intensity of fluorescence that we are interested in.
+The number of transcription regulatory sites in each gene in yeast. This feature is important because the transcription factors regulate the expression levels of the genes, and thus can help us predict the intensity of fluorescence.
