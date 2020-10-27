@@ -1,19 +1,19 @@
-This code aims to create PPI features from BIOGRID's data.
+This script aims to create PPI features from BIOGRID's data.
 
 **Inputs:**
 
-1.	BIOGRID-ALL-3.5.184.tab3.zip (Can be easily downloaded from the BIOGRID website) 
+1.	BIOGRID-ALL-3.5.184.tab3.zip (Can easily be downloaded from the BIOGRID website) 
 
 2.	biogrid-yeastyeast.csv – an edited version of BIOGRID-ALL-3.5.184.tab3.zip.
 
 **Codes:**
 
-1.	'firstrun.py' and 'secondrun.py'- these codes aim to create a csv file that contains only yesast-yeast interactions from the original file that contains interactions between major model organism species (Input=input1 , output=input2).
+1.	'firstrun.py' and 'secondrun.py'- these scripts create a CSV file that contains only yeast-yeast interactions from the original file that contains interactions between major model organism species (Input=input1 , output=input2).
 *Please run firstrun before seconrun.
 
-2.	'features.m'- this code calculates some features from the data (Input=input2,Output=output1).
+2.	'features.m'- this script calculates some features from this data (Input=input2,Output=output1).
 
-**Output: 'biogrid final.csv' (columns=features, rows= yeast's genes). Please visit our wiki,model page for more explanations.**  
+**Output: 'biogrid final.csv' (columns=features, rows= yeast's genes). Please visit our wiki,model page for further explanations.**  
 
 *The features:*
 
