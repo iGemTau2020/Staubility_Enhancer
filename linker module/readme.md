@@ -1,13 +1,13 @@
 This code enables the user to choose his preferred linker type- 2A/fusion and it presents provideprovides himthemhim  with the best linkers in of this type.
 
-*Function inputs:*
+**Function inputs:**
 •	Coding sequence (target + conjugate), amino acids alphabet.
 •	Type of linker – 2A/fusion linker.
 •	Ouput path – the path that the user would like to save the disorder profile plots in.
 •	Linkers.csv (downloaded from https://www.ibi.vu.nl/programs/linkerdbwww/)
 
-*Output: 10 options for best fusion linkers / 4 options for best 2A linkers (with descending order) based on the following principles:
-2A linkers*
+**Output: 10 options for best fusion linkers / 4 options for best 2A linkers (with descending order) based on the following principles:
+2A linkers**
 
 2A linkers:
 •	There are four common 2A sequences.
@@ -20,5 +20,5 @@ Fusion linkers:
 •	Chosen linker= linkers [argmin(final score)]
 
 
-*Required packages:*
+**Required packages:**
 •	IUPPED2A (https://iupred2a.elte.hu/download_new)
