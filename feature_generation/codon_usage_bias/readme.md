@@ -1,11 +1,10 @@
-The code generates codon usage bias features. Detailed explanation is within the code. 
+This script generates codon usage bias features. Detailed explanations can be found within the code. 
 
 
 **Files:**
-1. The code: "CUB_calculation-FINAL.ipynb" 
+1. The script: "CUB_calculation-FINAL.ipynb" 
 2. Output results: "CUB_results_final.xlsx"
 
-Unfortunately, the output file is too big to upload to github. 
 
 **Input data files:**
 
