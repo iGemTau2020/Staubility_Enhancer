@@ -10,7 +10,7 @@ c. In - a directory containing the software's dependencies.
 
 Note, these components must be kept together, in the same directory and with the same names.
 
-1. Staubility_Enhancer_User_Guide.pdf
+2. Staubility_Enhancer_User_Guide.pdf
 This PDF is the software's user guide. It is the same one available within the zip file.
 
 
