@@ -1,8 +1,7 @@
-The following is a raw data used as a feature. 
 
 **Input+Output:** 'yeastmine.xlsx'
 
-The data was downloaded from YeastMine website> Lists>  ALL_Verified_Uncharacterized_Dubious_ORFs->Interactions. 
+Our data was downloaded from the YeastMine website> Lists>  ALL_Verified_Uncharacterized_Dubious_ORFs->Interactions. 
 It contains 5000 rows (Yeast's genes) and 3 columns:
 
 1.	BioEntity.secondaryIdentifier gives information about the protein's name.
