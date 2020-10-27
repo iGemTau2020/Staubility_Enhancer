@@ -10,7 +10,7 @@ The function calculates for each gene:
 4.	Min value of distances
 5.	Mean mRNA levels of each gene and its connected genes
 
-inputs - HiC.mat (too big, contact us and we will sent it to you), updated_new_features_table.csv (too big, contact us and we will sent it to you)
+inputs - HiC.mat , hic_data.csv 
 
 output - HiC.csv
 
@@ -18,7 +18,7 @@ CoExp:
 CoExp.mat calculates a correlation score between each pair of genes according to their mRNA levels, using different databases.
 This function calculates the weighted rank for each gene according to the CoExp matrix.
 
-files needed - CoExp.mat (too big, contact us and we will sent it to you)
+files needed - CoExp.mat 
 
 output - Weighted_Rank.csv
 
