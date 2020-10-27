@@ -1,6 +1,7 @@
 Input and Outputs of all functions 
 
 Hic:
+Hic is A matrix of 'smoothed Hi-C graph distance between S. cerevisiae genes'.
 The function calculates for each gene:
 1.	Rank - number of connections
 2.	Mean value of distances
@@ -11,13 +12,19 @@ files needed - HiC.mat (too big, contact us and we will sent it to you), updated
 output - HiC.csv
 
 CoExp:
+CoExp.mat calculates a correlation score between each pair of genes according to their mRNA levels from different databases.
 the function calculates the weighted rank for each gene according to CoExp matrix.
 files needed - CoExp.mat (too big, contact us and we will sent it to you)
 output - Weighted_Rank.csv
 
 lfe:
-The features are based on the following tables, in addition we calculated the mean value per gene for each table.
-files needed - export_taxid_559292_begin_dlfe.csv, export_taxid_559292_begin_native.csv, export_taxid_559292_begin_shuffled.csv
+This function is for mRNA folding energy features.
+The features are based on the following tables, which contain lfe values in different windows.
+The first table is - native local folding energy (empirical results).
+The second table is - shuffled lfe (based on a random model).
+The third - dlfe, the difference between the results in table 1 and table 2.
+in addition we calculated the mean value per gene for each table.
+files needed - export_taxid_559292_begin_native.csv, export_taxid_559292_begin_shuffled.csv, export_taxid_559292_begin_dlfe.csv.
 output - dlfe.csv, lfe_native.csv, lfe_shuffled.csv, mean_lfe.csv
 
 sORF:
@@ -54,7 +61,12 @@ These features were calculated for both absolute and relative scores.
 files needed - full_table.csv, ATG_Tamir.xlsx
 output - ATG_withnan1.csv, ATG_withnan.csv
 
-In addition we used 'Gravy_aliphatic' and 'fop_instability' tables which contains this features for each yeast's gene (attached as inputs).
+In addition we used 'Gravy_aliphatic' and 'fop_instability' tables which contains this features for each yeast's gene (attached as inputs), which are:
+Aliphatic index- The aliphatic index of a protein is defined as the relative volume occupied by aliphatic side chains (alanine, valine, isoleucine, and leucine). Aliphatic index plays role in protein thermal stability. With a high Aliphatic index proteins are more thermally stable. Aliphatic amino acids also are hydrophobic in nature.
+Gravy score- The GRAVY number of a protein is a measure of its hydrophobicity or hydrophilicity. The two measures are combined in a hydropathy scale or hydropathy index. The more positive the value, the more hydrophobic are the amino acids located in that region of the protein. These scales are commonly used to predict the transmembrane alpha helices of membrane proteins. 
+Instability index- The Instability index is a measure of proteins, used to determine whether it will be stable in a test tube. If the index is less than 40, then it is probably stable in the test tube.
+Fop- This index measures the frequency of optimal codons (Fop) in a gene. It is a species-specific measure of bias towards certain codons that appear to be translational optimal in a species.
+
 
 
 mail info: glicksteinbar@gmail.com
