@@ -1,4 +1,4 @@
-This code enables the user to choose his preferred linker type- 2A/fusion and it presents provideprovides himthemhim  with the best linkers in of this type.
+This code enables users to choose his preferred linker type- 2A/fusion and it provides them with the best linkers in of this type.
 
 **Function inputs:**
 
@@ -10,7 +10,7 @@ This code enables the user to choose his preferred linker type- 2A/fusion and it
 
 •	Linkers.csv (downloaded from https://www.ibi.vu.nl/programs/linkerdbwww/)
 
-**Output: 10 options for best fusion linkers / 4 options for best 2A linkers (with descending order) based on the following principles:
+**Output: 10 options for best fusion linkers / 4 options for best 2A linkers (in descending order) based on the following principles:
 2A linkers**
 
 2A linkers:
@@ -33,4 +33,4 @@ Fusion linkers:
 
 **Required packages:**
 
-•	IUPPED2A (https://iupred2a.elte.hu/download_new)
+•	IUPRED2A (https://iupred2a.elte.hu/download_new)
