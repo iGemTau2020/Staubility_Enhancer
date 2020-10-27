@@ -1,4 +1,5 @@
-Input and Outputs of all functions 
+These functions generete general features which relate to yeasts genes.
+Bellow you can find information on the features and input and outputs of all functions.
 
 Hic:
 Hic is A matrix of 'smoothed Hi-C graph distance between S. cerevisiae genes'.
