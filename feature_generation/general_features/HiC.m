@@ -1,9 +1,9 @@
 clear all;
 clc;
 load('HiC.mat');
-c=readtable('updated_new_features_table.csv');
+c=readtable('hic_data.csv');
 ORF=table2array(c(1:end,1));
-mRNA=table2array(c(1:end,30));
+mRNA=table2array(c(1:end,2));
 
 thres = 6.58;
 d = [];

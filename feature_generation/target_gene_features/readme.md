@@ -1,18 +1,18 @@
 Target Gene Features
 
-We calculated distances features between the target gene and each of the yeast genes and from the mean values of the 5 strongest connections of each yeast genes. All features described below are calculated based on profiles we created for each subcategory. For each profile, we applied several distance functions between it and the target gene’s profile and the mean of the 5 strongest connections profiles. 
+We calculated distances features between the target gene and each of the yeast genes, and from the mean of the 5 strongest connections of each yeast gene. All features described below are calculated based on profiles we created for each subcategory. For each profile, we applied several distance functions between it and the target gene’s profile and the mean of the 5 strongest connections' profiles. 
 
 The 5 strongest connection for each yeast gene were calculated using the following function:
 max_5_ind_neighbours
-We used the string PPI in order to create for each gene a vector containing its 5 strongest connections (5 highest scores from the string PPI).
-files needed - 4932.protein.links.v11.0.txt (too big, contact us and we will sent it to you), seq_orf.csv
+For each gene, we used the string PPI to create a vector containing its 5 strongest connections (5 highest scores from the string PPI).
+inputs - 4932.protein.links.v11.0.txt, seq_orf.csv
 output - max_5_ind.csv
 
-All distances features were calculated using the final_func functions and are:
+All distances features were calculated using the final_func functions and include:
 a.	Codon relative frequency 
 For each gene, we calculated the relative frequency of each codon – the number of appearances of a codon divided by the number of appearances of the amino acid that the codon encodes. The result is a vector of length 64 that contains each relative frequency.
 This vector was also calculated for the target gene.
-The features that were calculated based on the target gene’s vector and each yeast gene’s vector:
+We calculated the following distances between the target gene’s vector and each yeast gene’s vector:
 i.	Euclidian distance
 ii.	L1 distance 
 iii.	Spearman correlation
@@ -23,7 +23,7 @@ vi.	Cartesian product
 b.	Amino acid frequency
 For each gene, we calculated the relative frequency of each amino acid – the number of appearances of an amino acid divided by the length of the amino-acid sequence. 
 This vector was also calculated for the target gene.
-The features that were calculated based on the target gene’s vector and each yeast gene’s vector:
+We calculated the following distances between the target gene’s vector and each yeast gene’s vector:
 i.	Euclidian distance
 ii.	L1 distance 
 iii.	Spearman correlation
@@ -34,7 +34,7 @@ vi.	Cartesian product
 c.	GC content profiles
 We created a GC content profile based on 10 windows of 30 nucleotides (nt) in a 300 nt window (the first 300 nt). For each sub-window, the GC content was calculated. 
 As for the target gene – the same calculation was done using the 300 nt from the end of the sequence.
-The features that were calculated based on the target gene’s vector and each yeast gene’s vector:
+We calculated the following distances between the target gene’s vector and each yeast gene’s vector:
 - Euclidian distance
 - L1 distance 
 - Spearman correlation
@@ -44,8 +44,8 @@ The features that were calculated based on the target gene’s vector and each y
 * for genes with a sequence length less than 300, the rest of the profile vector was filled with the average of the existing GC content in windows of 30 nt. For example – for a gene with sequence length of 100 nt – a 1X3 vector was created which contains 3 GC content results of 3 windows of 30 nt. The rest of the vector was filled with the average of this 1X3 vector in order to create a 1X10 vector.
 
 d.	String PPI
-We used the string PPI in order to create for each gene a vector containing its 5 strongest connections (5 highest scores from the string PPI).
-For each gene we calculated the mean codon relative frequency, the mean amino acid frequency and the mean GC content profile of its strongest connections and then calculated the following distances between these vectors and the target gene’s vectors of codons relative frequency and amino acid frequency: 
+For each gene, we used the string PPI to generate a vector containing its 5 strongest connections (5 highest scores from the string PPI).
+For each gene, we calculated and compared the mean codon relative frequency, the mean amino acid frequency and the mean GC content profile For it and its strongest connections, using the following distance measures: 
 - Euclidian distance
 - L1 distance 
 - Spearman correlation
@@ -56,9 +56,9 @@ For each gene we calculated the mean codon relative frequency, the mean amino ac
 * if a gene has less than 5 connections, then the mean is calculated based on the connections it has available.
 
 e.	mRNA folding energy
-We created mRNA folding energy profiles using the function RNAfold from the package ViennaRNA.  The profiles were calculated for each essential gene, based on 12 windows of 40 nucleotides (nt) with a 10 nt shift, resulting in a total window of the first 150 nt window. For each sub-window, the folding energy was calculated. 
+We created mRNA folding energy profiles using the function RNAfold from the package ViennaRNA.  These profiles were calculated for each conjugated gene, using 12 windows of 40 nucleotides (nt) with a 10 nt shift, resulting in a total window of the first 150 nt window. For each sub-window, the folding energy was calculated. 
 The target gene had the same calculation using the 150 nt from the end of the sequence.
-The features that were calculated based on the target gene’s vector and each conjugated gene’s vector:
+We calculated the following distances between the target gene’s vector and each yeast gene’s vector:
 - Euclidian distance
 - L1 distance 
 - Spearman correlation
