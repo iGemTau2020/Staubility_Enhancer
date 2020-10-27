@@ -11,6 +11,7 @@ The function calculates for each gene:
 5.	Mean mRNA levels of each gene and its connected genes
 
 files needed - HiC.mat (too big, contact us and we will sent it to you), updated_new_features_table.csv (too big, contact us and we will sent it to you)
+
 output - HiC.csv
 
 CoExp:
@@ -18,6 +19,7 @@ CoExp.mat calculates a correlation score between each pair of genes according to
 the function calculates the weighted rank for each gene according to CoExp matrix.
 
 files needed - CoExp.mat (too big, contact us and we will sent it to you)
+
 output - Weighted_Rank.csv
 
 lfe:
@@ -29,6 +31,7 @@ The third - dlfe, the difference between the results in table 1 and table 2.
 in addition we calculated the mean value per gene for each table.
 
 files needed - export_taxid_559292_begin_native.csv, export_taxid_559292_begin_shuffled.csv, export_taxid_559292_begin_dlfe.csv.
+
 output - dlfe.csv, lfe_native.csv, lfe_shuffled.csv, mean_lfe.csv
 
 sORF:
@@ -45,6 +48,7 @@ The features we calculated using the gene's sequence:
 9.	Mean length 200 codons
 
 files needed - full_table.csv (contains the sequence of each gene
+
 output - sORF.csv, sORF_Normalized.csv
 
 ATG_features:
@@ -65,6 +69,7 @@ iii.	Mean and maximum values for the scores in the following windows (default va
 These features were calculated for both absolute and relative scores.
 
 files needed - full_table.csv, ATG_Tamir.xlsx
+
 output - ATG_withnan1.csv, ATG_withnan.csv
 
 In addition we used 'Gravy_aliphatic' and 'fop_instability' tables which contains this features for each yeast's gene (attached as inputs), which are:
